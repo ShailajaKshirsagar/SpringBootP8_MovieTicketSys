@@ -53,7 +53,7 @@ public class TicketController
         return new ResponseEntity<>(updateTicket,HttpStatus.OK);
     }
 
-    //add List api
+    //add List api added
     @PostMapping("/addListData")
     public ResponseEntity<String> addList(@RequestBody List<Ticket> ticketList){
         ticketService.saveListTicket(ticketList);
